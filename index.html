@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>CRUD futbol</title>
+    <link type = "text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+   <table>
+    <tr>  
+        <td>
+            <form autocomplete="off" onsubmit="OnFormSubmit()">
+                <div>
+                    <label for = "numequipo">Numero de Equipo</label>
+                    <input type = "text" name="numequipo" id = "numequipo">   
+                 </div>
+                 <div>
+                    <label for = "equipo">Nombre del Equipo</label>
+                    <input type = "text" name="equipo" id = "equipo">   
+                 </div>
+                 <div>
+                    <label for = "titulos">Titulos Obtenidos</label>
+                    <input type = "number" name="titulos" id = "titulos">   
+                 </div>
+                 <div>
+                    <label for = "year">Años de Existencia</label>
+                    <input type = "number" name="year" id = "year">   
+                 </div>
+                
+                 <div class="form_action--button">
+                    <input type="submit" value="Agregar">
+                    <input type="reset" value= "resetear">
+                </div>
+            </form>
+
+            <td>
+                <table class = "List" id = "teamList">
+                    <thead>
+                        <tr>
+                            <th>Numero de Equipo</th>
+                            <th>Nombre del Equipo</th>
+                            <th>Titulos Obtenidos</th>
+                            <th>Años de Existenciia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </td> 
+    </tr> 
+    </table> 
+    <script type = "text/javascript" src="./script.js"> </script>
+</body>
+</html>
